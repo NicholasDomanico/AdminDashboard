@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 :root {
@@ -9,10 +11,17 @@
     --nav-background: #3281ff;
     --header-background: #fcfeff;
     --border-color: #1d1d1d;
+    --headline-color: #0a0a0a;
+    --shadow-color: #9c9c9c; 
 }
 
 html, body {
     height: 150vh;
+}
+
+h1, h2 {
+    color: var(--headline-color);
+    font-weight: bold;
 }
 
 #siteWrapper {
@@ -63,18 +72,18 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: var(--background);
-    box-shadow: 2px 2px 5px #9c9c9c;
     justify-content: stretch;
     align-content: stretch;
-
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 #sidebar > div {
+    flex: 1;
     background-color: var(--box-background);
     border-style: hidden;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 5px #9c9c9c;
-    width: 80%;
-    height: 40%;
 }
 
